@@ -22,3 +22,49 @@
 - поработать над фичами и их отбором
 - попробовать специализированные библиотеки (scikit-uplift)
 - попробовать метод uplift-tree
+
+Скачать данные можно по ссылке:
+https://drive.google.com/file/d/1N2hk64VmgwvHvIZAEMFl_w0DKXAdRWHy/view?usp=share_link
+
+В данных содержатся следующие датасеты: clients2, products, train, test, train_purch, test_purch
+
+Информация в таблице clients2:
+
+client_id - уникальный айди клиента
+first_issue_date - дата выпуска карты лояльности
+first_redeem_date - дата первого списания бонусных баллов
+age - возраст
+gender - пол
+
+Информация в таблице products:
+
+product_id - уникальный айди товара
+level_1, level_2, level_3,level_4 - захэшированная информация об уровнях
+segment_id - номер сегмента
+brand_id - уникальный айди бренда
+vendor_id - уникальный айди поставщика
+netto - вес продукта
+is_own_trademark - флаг принадлежности к товарам собственного производства
+is_alcohol - флаг принадлежности к алкогольной продукции
+
+Информация в таблице train:
+
+client_id	- уникальный айди клиента
+treatment_flg	- флаг воздействия маркетинговой кампанией
+purchased - флаг совершения покупки
+
+Информация в таблице train_purch и test_purch:
+
+client_id - уникальный айди клиента
+transaction_id	уникальный айди транзакции
+transaction_datetime	- дата и время транзакции
+regular_points_received	- количество полученных простых баллов
+express_points_received	- количество полученных экспресс быллов
+regular_points_spent	- сумма потраченных простых быллов
+express_points_spent	- сумма потраченных экспрасс баллов
+purchase_sum	- сумма покупки
+store_id	- уникальный айди магазина, где была совершена покупка
+product_id	- уникальный айди товара
+product_quantity	- количество товара
+trn_sum_from_iss	
+trn_sum_from_red
